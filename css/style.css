@@ -1,0 +1,294 @@
+/** GENERAL **/
+* {
+  font-family: "Lato", "Roboto", sans-serif;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #424B54;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 500;
+  margin: 1.5em auto 0.5em auto;
+  text-transform: capitalize;
+}
+
+.social {
+  margin: auto;
+  text-align: center;
+  list-style-type: none;
+}
+
+.social li {
+  display: inline;
+  margin: 2px;
+}
+
+.social a {
+  padding: 10px;
+}
+
+/** HEADER **/
+header {
+  background: linear-gradient(#435F5C, #96BBBB);
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  height: 95vh;
+}
+
+h1 {
+  color: white;
+  font-size: 6em;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: auto;
+  width: auto;
+  margin: auto;
+  margin-top: 25vh;
+}
+
+h4 {
+  color: white;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 6px solid white;
+  padding: 0;
+  width: 128px;
+  margin: 1em auto;
+}
+
+header .social {
+  position: absolute;
+  bottom: 5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/** PORTFOLIO **/
+#projects {
+  margin-bottom: 8em;
+}
+
+.thumbnails {
+  margin-top: 1em;
+}
+
+.showcase {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  text-align: center;
+  height: 278px;
+  margin: 10px auto;
+}
+
+.showcase:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  opacity: 0;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .3s ease;
+  background: #435F5C;
+}
+
+.overlay h4 {
+  opacity: 1;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#doomsday {
+  background-image: url("../assets/doomsday-bg-2x.png");
+}
+
+#hygiene-ratings {
+  background-image: url("../assets/hygiene-ratings-bg-2x.png");
+}
+
+#empty {
+  background: #96BBBB;
+}
+
+/** DETAILS **/
+#project-bios .container-full-bg {
+  background-origin: content-box;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  border-radius: 0;
+  height: 50vh;
+  padding-top: 4em;
+}
+
+.bio {
+  text-align: center;
+  display: none;
+}
+
+.bio ul {
+  margin-bottom: 1.5em;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+.bio .project-context li {
+  display: inline;
+  margin: auto 3em;
+}
+
+.project-info {
+  text-align: center;
+}
+
+.project-info h2 {
+  margin-top: 1em;
+  text-transform: uppercase;
+}
+
+.project-info p {
+  margin-bottom: 2em;
+}
+
+.project-info h6 {
+  font-family: "Roboto", "Lato", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.project-tags {
+  font-family: "Roboto", "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.project-tags li {
+  background: #F2F2F2;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.top-button-row {
+  margin: 0;
+  margin-top: -2.8em;
+}
+
+.close {
+  color: #424B54;
+  opacity: 1;
+  float: left;
+}
+
+.close:hover {
+  color: #618985;
+  opacity: 1;
+}
+
+#doomsday-banner {
+  background-color: #50AFA5;
+  background-image: url("../assets/doomsday-screens-2x.png");
+}
+
+#hygiene-ratings-banner {
+  background-color: #E3ED87;
+  background-image: url("../assets/hygiene-ratings-screens-2x.png");
+}
+
+#template-banner {
+  background-color: #96BBBB;
+  background-image: url("../assets/template-screens-android-2x.png")
+}
+
+/** CONTACT **/
+#contact {
+  background: #F2F2F2;
+  text-align: center;
+  padding-bottom: 5em;
+}
+
+#message {
+  margin-bottom: 2em;
+}
+
+#contact a {
+  background: #618985;
+  color: white;
+}
+
+#contact a:hover {
+  background:#435F5C;
+}
+
+/** FOOTER **/
+footer {
+  background: #424B54;
+  display: flex;
+  height: 10vh;
+}
+
+footer .social i {
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+
+footer .social a:hover {
+  color: #618985;
+}
+
+/** MEDIA QUERIES **/
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .bio .project-context li {
+    display: block;
+    margin: auto auto 1em;
+  }
+
+  #project-bios .container-full-bg {
+    background-size: auto 100%;
+  }
+
+}
