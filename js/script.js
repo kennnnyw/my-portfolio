@@ -9,12 +9,6 @@ $(document).ready(function(){
   $('.showcase').on('click', function(event){
     event.preventDefault();
 
-    // // hide currently visible project
-    // var showing = $('.bio');
-    // if (showing != null){
-    //   showing.hide();
-    // }
-
     // display selected project
     var bio = $(this).data('target');
     showMainSections();

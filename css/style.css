@@ -258,8 +258,13 @@ header .social {
 /** FOOTER **/
 footer {
   background: #424B54;
-  display: flex;
-  height: 10vh;
+  color: white;
+  display: flex-wrap;
+  text-align: center;
+}
+
+footer .social {
+  padding: 15px;
 }
 
 footer .social i {
@@ -270,6 +275,10 @@ footer .social i {
 
 footer .social a:hover {
   color: #618985;
+}
+
+footer p {
+  font-size: 10px;
 }
 
 /** MEDIA QUERIES **/
