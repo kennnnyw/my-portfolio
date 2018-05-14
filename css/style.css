@@ -261,6 +261,7 @@ footer {
   color: white;
   display: flex-wrap;
   text-align: center;
+  overflow: hidden;
 }
 
 footer .social {
