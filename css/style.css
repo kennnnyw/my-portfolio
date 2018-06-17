@@ -130,6 +130,10 @@ header .social {
   background-image: url("../assets/hygiene-ratings-bg-2x.png");
 }
 
+#weather {
+  background-image: url("../assets/weather-bg-2x.png");
+}
+
 #empty {
   background: #96BBBB;
 }
@@ -228,6 +232,11 @@ header .social {
 #hygiene-ratings-banner {
   background-color: #E3ED87;
   background-image: url("../assets/hygiene-ratings-screens-2x.png");
+}
+
+#weather-banner {
+  background-color: #8DCDE4;
+  background-image: url("../assets/weather-screens-2x.png");
 }
 
 #template-banner {
